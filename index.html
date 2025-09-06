@@ -1,14 +1,186 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script type="module" src="/src/main.js"></script>
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+<html lang="cs">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script type="module" src="src/main.js"></script>
+  <title>SOŠ Digital</title>
+</head>
+
+<body>
+  <header class="pb-5 bg-white">
+    <nav class="navbar bg-body-tertiary navbar-light bg-light sticky-top shadow">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="src/images/logo.svg" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+          <span class="fw-bold">SOŠ Digital</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex mt-3" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <span class="badge text-bg-warning text-light mt-3 mb-2">Fiktivní ukázkový web</span>
+    </div>
+
+    <div class="container-fluid">
+      <h1 class="fw-bold">Střední odborná škola Digital</h1>
+      <p class="text-body-secondary">Moderní vzdělávání v IT, designu a digitálních médií<br>
+        Studujte u nás, jsme vaše <em>jednička</em>!</p>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col col-auto">
+          <button class="btn btn-primary">Studijní obory</button>
+        </div>
+        <div class="col col-auto ps-0">
+          <button class="btn btn-outline-secondary">Nejčastější dotazy</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col col-auto mt-3 mb-3">
+          <div class="fw-medium">45 000+</div>
+          <div class="text-secondary"><small>Absolventů</small></div>
+        </div>
+        <div class="col col-auto mt-3 mb-3">
+          <div class="fw-medium">150</div>
+          <div class="text-secondary text-nowrap"><small>Let zkušeností</small></div>
+        </div>
+        <div class="col col-auto mt-3 mb-3">
+          <div class="fw-medium">99%</div>
+          <div class="text-secondary"><small>Uplatnění</small></div>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img" src="src/images/hero-image.webp" alt="Budova školy">
+      </div>
+    </div>
+  </header>
+
+  <section class="pt-5 pb-4 bg-light">
+    <div class="container-fluid">
+      <h2>Studijní obory</h2>
+      <div class="card mb-3">
+        <div class="card-body">
+          <h5 class="card-title">Fotografie</h5>
+          <p class="card-text">Ateliér, práce se světlem, postprodukce</p>
+        </div>
+      </div>
+      <div class="card mb-3">
+        <div class="card-body">
+          <h5 class="card-title">Video</h5>
+          <p class="card-text">Střih, color grading, zvuk, produkce</p>
+        </div>
+      </div>
+      <div class="card mb-3">
+        <div class="card-body">
+          <h5 class="card-title">Audio</h5>
+          <p class="card-text">Podcasty, hudební produkce, mix a mastering</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-white pt-5">
+    <div class="container-fluid">
+      <div class="row justify-content-between">
+        <div class="col col-auto">
+          <h2>Novinky</h2>
+        </div>
+        <div class="col col-7">
+          <div class="input-group">
+            <input class="form-control rounded me-2" type="text" placeholder="Hledat...">
+            <button type="button" class="btn btn-outline-secondary rounded">Hledat</button>
+          </div>
+        </div>
+      </div>
+      <div class="card mt-4 shadow-sm">
+        <img src="src/images/novinky-dod.webp" alt="Den otevřených dveří" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Den otevřených dveří – říjen</h5>
+          <p class="card-text">Zveme uchazeče a rodiče na prohlídku školy, laboratoří a ateliérů.</p>
+          <div class="row justify-content-between">
+            <div class="col col-auto"><span class="badge text-bg-warning text-light">Aktualita</span></div>
+            <div class="col col-auto"><a href="#">Číst více</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="card mt-4 shadow-sm">
+        <img src="src/images/novinky-iot.webp" alt="WebExpo" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Úspěch v soutěži WebExpo Student</h5>
+          <p class="card-text">Náš tým obsadil 4. místo s projektem chytré kampaně pro neziskovku.</p>
+          <div class="row justify-content-between">
+            <div class="col col-auto"><span class="badge text-bg-success text-light">Úspěch</span></div>
+            <div class="col col-auto"><a href="#">Číst více</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="card mt-4 shadow-sm">
+        <img src="src/images/novinky-vr.webp" alt="VR Studio" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Nové VR studio</h5>
+          <p class="card-text">Rozšiřujeme multimediální výuku o virtuální realitu a 3D scanning.</p>
+          <div class="row justify-content-between">
+            <div class="col col-auto"><span class="badge text-bg-info">Vybavení</span></div>
+            <div class="col col-auto"><a href="#">Číst více</a></div>
+          </div>
+        </div>
+      </div>
+      <ul class="pagination mt-4">
+        <li class="page-item disabled"><a class="page-link" href="#">Předchozí</a></li>
+        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link text-warning" href="#">2</a></li>
+        <li class="page-item"><a class="page-link text-warning" href="#">3</a></li>
+        <li class="page-item"><a class="page-link text-warning" href="#">Další</a></li>
+      </ul>
+    </div>
+  </section>
+
+</body>
+
 </html>
