@@ -15,10 +15,11 @@
           height="30" class="d-inline-block align-text-top"> <span class="fw-bold">SOŠ Digital</span> </a>
       <div class="d-none d-md-flex">
         <ul class="navbar-nav flex-row">
-          <li class="nav-item me-3"> <a class="nav-link" href="#obory">Obory</a> </li>
+          <li class="nav-item me-3"><a class="nav-link fw-bold" href="#">Domů</a></li>
+          <li class="nav-item me-3"> <a class="nav-link" href="#obory">Studijní obory</a> </li>
           <li class="nav-item me-3"> <a class="nav-link" href="#novinky">Novinky</a> </li>
           <li class="nav-item me-3"> <a class="nav-link" href="#udalosti">Události</a> </li>
-          <li class="nav-item me-3"> <a class="nav-link" href="#kontakt">Kontakt</a> </li>
+          <li class="nav-item me-3"><button class="btn btn-primary">Přihláška</button></li>
         </ul>
       </div> <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="offcanvas"
         data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation"> <span
@@ -26,11 +27,11 @@
       <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
         <div class="offcanvas-body">
           <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-            <li class="nav-item"> <a class="nav-link" href="#">Domů</a> </li>
-            <li class="nav-item"> <a class="nav-link" href="#obory">Obory</a> </li>
+            <li class="nav-item"> <a class="nav-link fw-bold" href="#">Domů</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="#obory">Studijní obory</a> </li>
             <li class="nav-item"> <a class="nav-link" href="#novinky">Novinky</a> </li>
             <li class="nav-item"> <a class="nav-link" href="#udalosti">Události</a> </li>
-            <li class="nav-item"> <a class="nav-link" href="#kontakt">Kontakt</a> </li>
+            <li class="nav-item"><button class="btn btn-primary">Přihláška</button></li>
           </ul>
         </div>
       </div>
@@ -108,7 +109,8 @@
         </div>
         <div class="col col-7">
           <div class="input-group"> <input class="form-control rounded me-2" type="text" placeholder="Hledat...">
-            <button type="button" class="btn btn-outline-secondary rounded">Hledat</button> </div>
+            <button type="button" class="btn btn-outline-secondary rounded">Hledat</button>
+          </div>
         </div>
       </div>
       <div class="row">
@@ -277,45 +279,61 @@
   <section class="py-5 bg-light">
     <div class="container">
       <h2 id="kontakt">Kontakt</h2>
-      <div class="card my-4 shadow">
-        <div class="card-body">
-          <h5 class="card-title">Napište nám</h5>
-          <p class="card-text">Jméno</p>
-          <div class="input-group"> <input type="text" class="form-control"> </div>
-          <p>E-mail</p>
-          <div class="input-group"> <input type="email" class="form-control"> </div>
-          <p>Předmět</p>
-          <div class="input-group"> <input type="text" class="form-control"> </div>
-          <p>Zpráva</p>
-          <div class="input-group"> <textarea class="form-control" aria-label="With textarea"></textarea> </div>
-          <div class="form-check py-2"> <input class="form-check-input" type="checkbox" value="" id="checkDefault">
-            <label class="form-check-label" for="checkDefault"> Souhlasím se zpracováním osobních údajů </label> </div>
-          <div class="row justify-content-start">
-            <div class="col-auto"> <button type="button" class="btn btn-primary">Odeslat</button> </div>
-            <div class="col-auto"> <button type="reset" class="btn btn-outline-secondary">Reset</button> </div>
-          </div>
-        </div>
-      </div>
-      <h5>Kde nás najdete</h5>
       <div class="row">
         <div class="col-md-6">
-          <div class="card">
+          <div class="card my-4 shadow">
             <div class="card-body">
-              <h6 class="card-title">Adresa</h6>
-              <p class="card-text">U Digitálu 12</p>
-              <p class="card-text">460 01 Liberec</p>
+              <h5 class="card-title">Napište nám</h5>
+              <div class="row">
+                <div class="col-md-6">
+                  <p class="card-text">Jméno</p>
+                  <div class="input-group"> <input type="text" class="form-control"> </div>
+                </div>
+                <div class="col-md-6">
+                  <p>E-mail</p>
+                  <div class="input-group"> <input type="email" class="form-control"> </div>
+                </div>
+              </div>
+
+
+              <p>Předmět</p>
+              <div class="input-group"> <input type="text" class="form-control"> </div>
+              <p>Zpráva</p>
+              <div class="input-group"> <textarea class="form-control" aria-label="With textarea"></textarea> </div>
+              <div class="form-check py-2"> <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                <label class="form-check-label" for="checkDefault"> Souhlasím se zpracováním osobních údajů </label>
+              </div>
+              <div class="row justify-content-start">
+                <div class="col-auto"> <button type="button" class="btn btn-primary">Odeslat</button> </div>
+                <div class="col-auto"> <button type="reset" class="btn btn-outline-secondary">Reset</button> </div>
+              </div>
             </div>
           </div>
         </div>
         <div class="col-md-6">
-          <div class="card">
-            <div class="card-body">
-              <h6 class="card-title">Kontakt</h6> <a href="#" class="card-text">+420 123 456 789</a><br> <a href="#"
-                class="card-text">info@sosdigital.cz</a>
+          <h5>Kde nás najdete</h5>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card">
+                <div class="card-body">
+                  <h6 class="card-title">Adresa</h6>
+                  <p class="card-text">U Digitálu 12<br>460 01 Liberec</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card">
+                <div class="card-body">
+                  <h6 class="card-title">Kontakt</h6> <a href="#" class="card-text">+420 123 456 789</a><br> <a href="#"
+                    class="card-text">info@sosdigital.cz</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
+
+
     </div>
   </section>
   <footer class="bg-dark py-5 text-light">
